@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="妖艳皇后专题页面，汇集经典影视作品、热门小说推荐及历史背景解析，提供高清剧照、剧情简介与角色分析，满足读者与观众对这一经典形象的深度探索需求。">
+    <meta name="keywords" content="妖艳皇后,影视推荐,小说改编,宫廷剧,古装角色,历史人物">
+    <title>妖艳皇后-经典影视与小说角色深度解析</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #800020;
+            --secondary-color: #2c0b0e;
+            --accent-color: #d4af37;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #f9f7f5;
+            --card-bg: #ffffff;
+            --spacing-unit: 1rem;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--secondary-color);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('https://picsum.photos/seed/queen/1920/600');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            mix-blend-mode: overlay;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            border-radius: 50px;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* 通用 Section 样式 */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        /* 角色档案 */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .character-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background-color: rgba(128, 0, 32, 0.1);
+            color: var(--primary-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        /* 内容分类 */
+        .category-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 10px 25px;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .category-btn.active, .category-btn:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .content-item {
+            display: flex;
+            gap: 15px;
+            background: #fff;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 3px solid transparent;
+        }
+
+        .content-item:hover {
+            border-left-color: var(--accent-color);
+            transform: translateX(5px);
+        }
+
+        .content-thumb {
+            width: 80px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .content-info h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .content-info p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .content-meta {
+            font-size: 0.75rem;
+            color: #999;
+        }
+
+        /* 常见问题 */
+        .faq-section {
+            background-color: #fff;
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--secondary-color);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details p {
+            margin-top: 10px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            padding-left: 10px;
+            border-left: 2px solid var(--accent-color);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: var(--secondary-color);
+            color: rgba(255,255,255,0.6);
+            padding: 50px 0 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; } /* 移动端简化：隐藏菜单 */
+            .content-item { flex-direction: column; }
+            .content-thumb { width: 100%; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">妖艳皇后专题</div>
+            <nav class="nav-links">
+                <a href="#">影视作品</a>
+                <a href="#">小说推荐</a>
+                <a href="#">角色档案</a>
+                <a href="#">深度解析</a>
+                <a href="#">历史背景</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>探寻历史深处的绝代风华</h1>
+                <p>从《甄嬛传》到《芈月传》，从宫廷权谋到个人宿命，深入解析“妖艳皇后”这一经典文学与影视形象的演变与魅力。</p>
+                <a href="#content" class="btn">开始探索</a>
+            </div>
+        </section>
+
+        <!-- 角色档案 Section -->
+        <section class="container">
+            <div class="section-title">
+                <h2>经典角色档案</h2>
+                <p>盘点荧幕与书中最具代表性的“妖艳皇后”形象</p>
+            </div>
+            <div class="character-grid">
+                <article class="character-card">
+                    <img src="https://picsum.photos/seed/zhenhuan/400/300" alt="甄嬛" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">电视剧</span>
+                        <h3 class="card-title">甄嬛</h3>
+                        <p class="card-desc">从纯真少女到权倾后宫的太后，她的“妖艳”是历经沧桑后的从容与锋芒。</p>
+                        <a href="#" style="color:var(--primary-color); font-weight:bold; font-size:0.9rem;">查看详情 &rarr;</a>
+                    </div>
+                </article>
+                <article class="character-card">
+                    <img src="https://picsum.photos/seed/miyue/400/300" alt="芈月" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">电视剧</span>
+                        <h3 class="card-title">芈月</h3>
+                        <p class="card-desc">大秦宣太后，以雷霆手段治理后宫，集美貌与野心于一身。</p>
+                        <a href="#" style="color:var(--primary-color); font-weight:bold; font-size:0.9rem;">查看详情 &rarr;</a>
+                    </div>
+                </article>
+                <article class="character-card">
+                    <img src="https://picsum.photos/seed/zhaofei/400/300" alt="赵飞燕" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">历史/影视</span>
+                        <h3 class="card-title">赵飞燕</h3>
+                        <p class="card-desc">汉成帝皇后，以“掌上舞”闻名，其形象在后世文学中常被赋予极致的妩媚与悲剧色彩。</p>
+                        <a href="#" style="color:var(--primary-color); font-weight:bold; font-size:0.9rem;">查看详情 &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 内容推荐 Section -->
+        <section class="container" id="content">
+            <div class="section-title">
+                <h2>深度阅读与观看</h2>
+                <p>精选小说改编与历史纪实内容</p>
+            </div>
+
+            <div class="category-nav">
+                <button class="category-btn active">全部</button>
+                <button class="category-btn">宫廷权谋</button>
+                <button class="category-btn">红颜祸水</button>
+                <button class="category-btn">历史传记</button>
+            </div>
+
+            <div class="content-list">
+                <article class="content-item">
+                    <img src="https://picsum.photos/seed/novel1/150/200" alt="书籍封面" class="content-thumb">
+                    <div class="content-info">
+                        <h3>《后宫·甄嬛传》原著小说</h3>
+                        <p>孙皓晖原著，细腻描绘了深宫中女性的生存法则与爱恨情仇。</p>
+                        <div class="content-meta">类型：小说 | 状态：完结</div>
+                    </div>
+                </article>
+                <article class="content-item">
+                    <img src="https://picsum.photos/seed/movie1/150/200" alt="电影海报" class="content-thumb">
+                    <div class="content-info">
+                        <h3>《铜雀台》</h3>
+                        <p>讲述灵雎与曹操之间的爱恨纠葛，展现乱世中红颜的无奈。</p>
+                        <div class="content-meta">类型：古装剧情 | 评分：7.2</div>
+                    </div>
+                </article>
+                <article class="content-item">
+                    <img src="https://picsum.photos/seed/history1/150/200" alt="历史书" class="content-thumb">
+                    <div class="content-info">
+                        <h3>《史记·吕太后本纪》</h3>
+                        <p>正史视角下的吕后，探讨女性在政治舞台上的非凡手段。</p>
+                        <div class="content-meta">类型：历史 | 来源：史记</div>
+                    </div>
+                </article>
+                <article class="content-item">
+                    <img src="https://picsum.photos/seed/novel2/150/200" alt="书籍封面" class="content-thumb">
+                    <div class="content-info">
+                        <h3>《媚行天下》系列</h3>
+                        <p>穿越题材小说，女主以现代思维经营后宫，演绎不一样的“妖艳”。</p>
+                        <div class="content-meta">类型：穿越 | 状态：连载中</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题</h2>
+                    <p>关于“妖艳皇后”形象与相关作品</p>
+                </div>
+                <div class="faq-grid">
+                    <details>
+                        <summary>什么是典型的“妖艳皇后”形象？</summary>
+                        <p>在文学和影视作品中，这类角色通常指代拥有绝世美貌、性格复杂、善于权谋或因美貌而卷入政治漩涡的后宫女性。她们往往不单纯是受害者，而是拥有强大内心和生存智慧的统治者。</p>
+                    </details>
+                    <details>
+                        <summary>有哪些经典电视剧推荐？</summary>
+                        <p>除了《甄嬛传》和《芈月传》，《金枝欲孽》、《美人心计》等剧集中也有大量对这类角色的精彩刻画，展现了后宫生存的残酷与真实。</p>
+                    </details>
+                    <details>
+                        <summary>历史上的真实皇后是否真的如此“妖艳”？</summary>
+                        <p>历史记载往往带有文人墨客的主观色彩。真实的皇后可能更侧重于政治才能或家族利益，但她们在历史长河中留下的影响力，确实符合“绝代风华”的描述。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于专题</h4>
+                    <p>本站致力于整理与分享关于“妖艳皇后”这一经典文学与影视形象的深度内容，包括角色分析、作品推荐及历史背景解读。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>内容导航</h4>
+                    <ul>
+                        <li><a href="#">影视作品库</a></li>
+                        <li><a href="#">小说阅读</a></li>
+                        <li><a href="#">历史人物志</a></li>
+                        <li><a href="#">角色图鉴</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关标签</h4>
+                    <ul>
+                        <li><a href="#">后宫争斗</a></li>
+                        <li><a href="#">古代女性</a></li>
+                        <li><a href="#">古装剧推荐</a></li>
+                        <li><a href="#">历史小说</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 妖艳皇后专题网. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
