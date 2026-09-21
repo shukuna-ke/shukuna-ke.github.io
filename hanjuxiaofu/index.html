@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="韩剧小妇人专题站 - 深度解析韩剧《小妇人》剧情、人物关系、角色分析及观影指南。提供剧集评分、分集详解与经典台词摘录。">
+    <meta name="keywords" content="韩剧小妇人, 韩剧小妇人剧情, 小妇人角色分析, 韩剧小妇人结局, 韩剧小妇人观看指南">
+    <title>韩剧小妇人-深度剧情解析与角色指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-secondary: #666666;
+            --border-radius: 8px;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 24px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-item strong {
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        .stat-item span {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* Article Section */
+        .article-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-color);
+            color: var(--primary-color);
+        }
+
+        .intro-text {
+            margin-bottom: 24px;
+            text-align: justify;
+        }
+
+        .intro-text p {
+            margin-bottom: 16px;
+        }
+
+        .highlight-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        /* Character Cards */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .character-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .character-img {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            object-fit: cover;
+        }
+
+        .character-info {
+            padding: 15px;
+        }
+
+        .character-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .character-role {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .sidebar-list li {
+            margin-bottom: 12px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        .sidebar-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sidebar-list a {
+            font-size: 0.95rem;
+            display: block;
+        }
+
+        .sidebar-list a:hover {
+            color: var(--accent-color);
+        }
+
+        .sidebar-list span {
+            font-size: 0.8rem;
+            color: #999;
+            float: right;
+        }
+
+        /* Synopsis Tabs */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .tab-btn.active {
+            border-bottom-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ccc;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>◆</span> 韩剧小妇人
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro">剧情简介</a></li>
+                    <li><a href="#characters">角色解析</a></li>
+                    <li><a href="#analysis">深度解析</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>韩剧《小妇人》</h1>
+                <p>探讨现代女性在婚姻、事业与自我价值之间的抉择，一部直击人心的社会派写实力作。</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>9.2</strong>
+                        <span>豆瓣评分</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>16集</strong>
+                        <span>单集时长</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>TVN</strong>
+                        <span>播出平台</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container content-grid">
+            <!-- Main Content -->
+            <article class="article-section">
+                <h2 class="section-title" id="intro">剧情简介</h2>
+                <div class="intro-text">
+                    <p>《小妇人》是一部聚焦于现代都市女性生活困境的韩国电视剧。故事以三姐妹——李善珠、李善友和林善京为中心，讲述了她们在面对家庭压力、职场挑战以及复杂情感纠葛时的成长与挣扎。剧名“小妇人”并非指代年龄，而是象征着她们在社会结构与家庭责任面前，那种看似渺小却坚韧不拔的姿态。</p>
+                    <p>该剧没有落入传统韩剧的狗血套路，而是通过细腻的笔触，还原了现实生活中的琐碎与真实。从婆媳关系的微妙平衡，到职场晋升的残酷竞争，再到对女性自我意识的觉醒，每一集都充满了现实的重量感。观众不仅能看到角色的喜怒哀乐，更能从中看到自己的影子。</p>
+                </div>
+
+                <div class="highlight-box">
+                    “我们不是在等待王子，我们是在等待成为自己的女王。” —— 剧中经典台词
+                </div>
+
+                <h2 class="section-title" id="characters">主要角色解析</h2>
+                <p>本剧的人物塑造丰满立体，没有绝对的反派，只有立场不同的人。以下是核心角色的简要分析：</p>
+                
+                <div class="character-grid">
+                    <div class="character-card">
+                        <img src="https://picsum.photos/seed/san/300/300" alt="李善珠" class="character-img">
+                        <div class="character-info">
+                            <div class="character-name">李善珠</div>
+                            <div class="character-role">长女 / 事业型女性</div>
+                        </div>
+                    </div>
+                    <div class="character-card">
+                        <img src="https://picsum.photos/seed/san/300/300" alt="李善友" class="character-img">
+                        <div class="character-info">
+                            <div class="character-name">李善友</div>
+                            <div class="character-role">次女 / 温柔隐忍</div>
+                        </div>
+                    </div>
+                    <div class="character-card">
+                        <img src="https://picsum.photos/seed/san/300/300" alt="林善京" class="character-img">
+                        <div class="character-info">
+                            <div class="character-name">林善京</div>
+                            <div class="character-role">三女 / 桀骜不驯</div>
+                        </div>
+                    </div>
+                    <div class="character-card">
+                        <img src="https://picsum.photos/seed/san/300/300" alt="金泰浩" class="character-img">
+                        <div class="character-info">
+                            <div class="character-name">金泰浩</div>
+                            <div class="character-role">重要配角 / 情感导师</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title" id="analysis">深度解析：为何值得一看？</h2>
+                <div class="tabs">
+                    <div class="tab-btn active" onclick="openTab(event, 'theme')">核心主题</div>
+                    <div class="tab-btn" onclick="openTab(event, 'style')">叙事风格</div>
+                    <div class="tab-btn" onclick="openTab(event, 'ending')">结局解读</div>
+                </div>
+
+                <div id="theme" class="tab-content active">
+                    <p><strong>女性意识的觉醒：</strong> 剧作深刻探讨了在传统父权制与现代独立思想冲突下，女性如何寻找自我定位。三姐妹虽然性格迥异，但最终都意识到，真正的幸福并非依附于他人，而是源于内心的强大。</p>
+                    <p><strong>家庭关系的重构：</strong> 剧中对家庭关系的刻画非常现实。它展示了家庭并非避风港，有时也是压力的来源。通过冲突与和解，剧集传达了沟通与理解是维系家庭纽带的关键。</p>
+                </div>
+
+                <div id="style" class="tab-content">
+                    <p><strong>去戏剧化处理：</strong> 相比于其他韩剧，本剧减少了夸张的表演和巧合的剧情。导演采用了冷静客观的镜头语言，让观众有更多的空间去思考角色的动机和行为的合理性。</p>
+                </div>
+
+                <div id="ending" class="tab-content">
+                    <p><strong>开放式结局：</strong> 剧集并没有给出一个完美的童话结局，而是选择了现实主义的收尾。这种处理方式虽然让部分观众感到遗憾，但更符合剧集探讨现实困境的初衷，留给观众无尽的回味。</p>
+                </div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside>
+                <div class="sidebar-card">
+                    <h3 class="section-title" style="font-size: 1.2rem; border: none; padding: 0;">剧集看点</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">现实题材的巅峰之作</a> <span>热度 98%</span></li>
+                        <li><a href="#">细腻的情感描写</a> <span>热度 95%</span></li>
+                        <li><a href="#">女性视角的独特视角</a> <span>热度 92%</span></li>
+                        <li><a href="#">演技派的精彩对决</a> <span>热度 90%</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="section-title" style="font-size: 1.2rem; border: none; padding: 0;">观看指南</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">分集剧情速览</a> <span>更新至第16集</span></li>
+                        <li><a href="#">角色关系图</a> <span>高清大图</span></li>
+                        <li><a href="#">经典台词合集</a> <span>值得收藏</span></li>
+                        <li><a href="#">拍摄花絮</a> <span>幕后揭秘</span></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="article-section">
+                <h2 class="section-title">常见问题 (FAQ)</h2>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <details>
+                        <summary style="cursor: pointer; font-weight: 500; padding: 10px; background: #f5f5f5; border-radius: 4px;">《小妇人》适合什么人群观看？</summary>
+                        <p style="padding: 10px;">该剧适合对现实主义题材感兴趣的观众，特别是关注女性成长、家庭伦理以及职场生存状态的观众。如果您喜欢细腻、真实且不发狗血剧的剧集，本片是不错的选择。</p>
+                    </details>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: 500; padding: 10px; background: #f5f5f5; border-radius: 4px;">在哪里可以观看全集？</summary>
+                        <p style="padding: 10px;">该剧最初在韩国TVN电视台播出，后续各大流媒体平台通常会在播出结束后引进版权。建议通过正规视频平台搜索观看，以支持正版。</p>
+                    </details>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: 500; padding: 10px; background: #f5f5f5; border-radius: 4px;">这部剧的评价如何？</summary>
+                        <p style="padding: 10px;">《小妇人》在豆瓣等评分网站上获得了较高的评价，尤其是其剧本的扎实程度和演员的精湛演技。它被许多评论认为是对现代女性生存状态的一次深刻剖析。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于本站</h4>
+                    <p>本站致力于为韩剧爱好者提供最全面的资讯、剧情解析和角色分析。我们关注现实题材，推崇独立思考。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">剧集列表</a></li>
+                        <li><a href="#">演员表</a></li>
+                        <li><a href="#">幕后花絮</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>免责声明</h4>
+                    <ul>
+                        <li>本站内容仅供学习交流</li>
+                        <li>部分图片来源于网络</li>
+                        <li>如有版权问题请联系删除</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 韩剧小妇人专题站. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
