@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="天生冤家 - 热门经典影视、动漫与小说中相爱相杀的经典CP盘点，解析欢喜冤家的情感发展脉络与代表作品。">
+    <meta name="keywords" content="天生冤家, 欢喜冤家, CP盘点, 影视推荐, 动漫CP">
+    <title>天生冤家 - 经典欢喜冤家影视与动漫CP盘点</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary: #e91e63;
+            --secondary: #9c27b0;
+            --dark: #1a1a2e;
+            --light: #f5f5f5;
+            --white: #ffffff;
+            --gray: #666;
+            --border-radius: 12px;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--dark);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.7)), url('https://picsum.photos/seed/fight/1920/800') center/cover no-repeat;
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Categories Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .category-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .card-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-footer {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rating {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--white);
+            padding: 60px 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 80px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--primary);
+            font-size: 30px;
+        }
+
+        .feature-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .feature-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* CP List Section */
+        .cp-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .cp-item {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .cp-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .cp-content {
+            flex: 1;
+        }
+
+        .cp-name {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .cp-ship {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .cp-quote {
+            font-style: italic;
+            color: #555;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .cp-quote::before {
+            content: '“';
+            font-size: 3rem;
+            color: #eee;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            font-family: serif;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto 80px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background-color: #fdfdfd;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #fafafa;
+        }
+
+        .faq-answer p {
+            padding: 20px;
+            color: #555;
+            border-top: 1px solid #eee;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: #aaa;
+            padding: 60px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .cp-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .cp-avatar {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <span>⚡</span> 天生冤家
+        </div>
+        <nav class="nav-links">
+            <a href="#">首页</a>
+            <a href="#categories">分类盘点</a>
+            <a href="#features">情感解析</a>
+            <a href="#cp-list">经典CP</a>
+            <a href="#faq">常见问题</a>
+        </nav>
+        <a href="#" class="cta-btn">加入讨论</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>相爱相杀的极致浪漫</h1>
+    <p>探索影视、动漫与文学作品中那些从互相憎恶到生死相依的“天生冤家”关系。解析欢喜冤家的情感逻辑与代表作品。</p>
+    <div class="hero-tags">
+        <span class="tag">#影视推荐</span>
+        <span class="tag">#动漫CP</span>
+        <span class="tag">#情感分析</span>
+        <span class="tag">#经典桥段</span>
+    </div>
+</section>
+
+<main class="container">
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>为什么我们爱看“冤家”恋爱？</h2>
+            <p>欢喜冤家的关系模式往往比平淡的甜蜜更具张力与戏剧性。</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">⚔️</div>
+                <h3>极致的反差萌</h3>
+                <p>性格迥异的两人碰撞，产生令人捧腹的火花与意想不到的化学反应。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔄</div>
+                <h3>情感的动态成长</h3>
+                <p>从对立到理解，这种关系的转变过程细腻而真实，观众代入感极强。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎬</div>
+                <h3>高密度的剧情</h3>
+                <p>冲突与和解交替，使得剧情节奏紧凑，始终保持着观众的期待值。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <div class="section-header">
+            <h2>热门冤家题材分类</h2>
+            <p>不同媒介中，“天生冤家”呈现出多样的表现形式。</p>
+        </div>
+        <div class="category-grid">
+            <article class="category-card">
+                <img src="https://picsum.photos/seed/movies/400/250" alt="影视作品" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">经典影视冤家</h3>
+                    <div class="card-meta">
+                        <span class="meta-item">🎬 电影</span>
+                        <span class="meta-item">📺 电视剧</span>
+                    </div>
+                    <p class="card-desc">盘点好莱坞与中国影视中那些从宿敌变情人的经典银幕形象，如《史密斯夫妇》与《我的前半生》。</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.8</span>
+                        <a href="#" style="color:var(--primary); font-weight:600;">查看列表 &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="category-card">
+                <img src="https://picsum.photos/seed/anime/400/250" alt="动漫作品" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">二次元欢喜冤家</h3>
+                    <div class="card-meta">
+                        <span class="meta-item">📖 漫画</span>
+                        <span class="meta-item">📺 动漫</span>
+                    </div>
+                    <p class="card-desc">探索日漫与国漫中经典的“傲娇与毒舌”组合，如《我的英雄学院》与《狐妖小红娘》。</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.9</span>
+                        <a href="#" style="color:var(--primary); font-weight:600;">查看列表 &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="category-card">
+                <img src="https://picsum.photos/seed/novel/400/250" alt="文学作品" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">文学中的宿命纠缠</h3>
+                    <div class="card-meta">
+                        <span class="meta-item">📕 小说</span>
+                        <span class="meta-item">📝 网文</span>
+                    </div>
+                    <p class="card-desc">阅读那些文笔细腻的冤家变爱文，探讨人性在冲突中的挣扎与融合。</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.7</span>
+                        <a href="#" style="color:var(--primary); font-weight:600;">查看列表 &rarr;</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CP List Section -->
+    <section id="cp-list">
+        <div class="section-header">
+            <h2>年度代表CP盘点</h2>
+            <p>这些角色用行动诠释了“冤家路窄”到“生死相随”的极限。</p>
+        </div>
+        <div class="cp-list">
+            <div class="cp-item">
+                <img src="https://picsum.photos/seed/hero1/150/150" alt="角色A" class="cp-avatar">
+                <div class="cp-content">
+                    <h3 class="cp-name">李逍遥 & 林月如</h3>
+                    <span class="cp-ship">《仙剑奇侠传》</span>
+                    <div class="cp-quote">
+                        “既不回头，何必不忘。既然无缘，何须誓言。今日种种，似水无痕。”
+                    </div>
+                    <p style="color:#666;">这段跨越时空的虐恋，是无数人心中的意难平。两人从互不相让的江湖路客，到生死与共的恋人，诠释了最纯粹的冤家情深。</p>
+                </div>
+            </div>
+
+            <div class="cp-item">
+                <img src="https://picsum.photos/seed/hero2/150/150" alt="角色B" class="cp-avatar">
+                <div class="cp-content">
+                    <h3 class="cp-name">皮卡丘 & 小智</h3>
+                    <span class="cp-ship">《精灵宝可梦》</span>
+                    <div class="cp-quote">
+                        “皮卡皮卡！”（虽然没台词，但眼神交流胜过千言万语。）
+                    </div>
+                    <p style="color:#666;">虽然不是典型的人类恋爱模式，但皮卡丘与小智之间从陌生到依赖，从依赖到灵魂伴侣的羁绊，是跨越物种的“天生冤家”典范。</p>
+                </div>
+            </div>
+
+            <div class="cp-item">
+                <img src="https://picsum.photos/seed/hero3/150/150" alt="角色C" class="cp-avatar">
+                <div class="cp-content">
+                    <h3 class="cp-name">苏明玉 & 石天冬</h3>
+                    <span class="cp-ship">《都挺好》</span>
+                    <div class="cp-quote">
+                        “你负责赚钱养家，我负责貌美如花（苏明玉版）。”
+                    </div>
+                    <p style="color:#666;">一个是职场女强人，一个是温暖治愈的厨师。两人的关系打破了传统性别角色，展现了成熟女性在情感中的独立与渴望被爱。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <h2>常见问题解答</h2>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">什么是典型的“天生冤家”关系？</div>
+            <div class="faq-answer">
+                <p>典型的冤家关系通常指两个角色在性格、立场或背景上有显著差异，初期互相排斥、误解甚至敌对，但在共同经历事件后逐渐产生情感共鸣，最终走到一起的模式。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">为什么这类题材在观众中很受欢迎？</div>
+            <div class="faq-answer">
+                <p>这种关系模式具有天然的戏剧张力。冲突的解决过程往往伴随着角色的自我成长和情感深化，比起平淡的日常，这种“打是亲骂是爱”的互动更能激发观众的共鸣和期待。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">如何判断两个角色是否适合做“冤家”？</div>
+            <div class="faq-answer">
+                <p>主要看两人是否具备互补的性格特质（如暴躁与冷静），以及是否有足够的共同目标或利益捆绑。只有基础牢固的冲突，才能转化为长久的羁绊。</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>关于本站</h4>
+            <p style="font-size: 0.9rem; line-height: 1.8;">
+                本站致力于收集和整理影视、动漫及文学作品中经典的“天生冤家”CP案例，为喜爱情感叙事的读者提供参考与共鸣。
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>快速导航</h4>
+            <ul>
+                <li><a href="#">影视推荐</a></li>
+                <li><a href="#">动漫排行</a></li>
+                <li><a href="#">情感分析</a></li>
+                <li><a href="#">投稿指南</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>相关标签</h4>
+            <ul>
+                <li><a href="#">欢喜冤家</a></li>
+                <li><a href="#">相爱相杀</a></li>
+                <li><a href="#">经典CP</a></li>
+                <li><a href="#">影视解说</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 天生冤家专题站. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // 简单的FAQ折叠面板交互
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            const isActive = parent.classList.contains('active');
+            
+            // 关闭所有已打开的项
+            document.querySelectorAll('.faq-item').forEach(child => {
+                child.classList.remove('active');
+            });
+
+            // 如果刚才没打开，现在打开
+            if (!isActive) {
+                parent.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+  </html>
