@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趙薇-影视作品、演艺经历与个人资料全收录</title>
+    <meta name="description" content="趙薇个人资料、影视作品列表、演艺经历回顾及经典作品深度解析。提供关于这位著名演员的全面资讯与资料查询。">
+    <meta name="keywords" content="趙薇, 趙薇个人资料, 趙薇电影, 趙薇电视剧, 趙薇演艺经历">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8b2e2e; /* 深红，象征经典与庄重 */
+            --secondary-color: #f4f4f4;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-body: #ffffff;
+            --bg-section: #f9f9f9;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+            --font-main: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            background-color: var(--bg-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/zhaowei_hero/1600/900') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #6b1e1e;
+        }
+
+        /* Bio Section */
+        .bio-section {
+            padding: 4rem 0;
+            background-color: var(--bg-body);
+        }
+
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .bio-img-wrapper {
+            position: relative;
+        }
+
+        .bio-img-wrapper img {
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        .bio-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .bio-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .bio-meta span {
+            display: flex;
+            align-items: center;
+        }
+
+        .bio-text {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Filmography Section */
+        .filmography-section {
+            padding: 4rem 0;
+            background-color: var(--bg-section);
+        }
+
+        .film-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .film-tab {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .film-tab.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .film-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .film-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .film-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .film-poster {
+            height: 400px;
+            background-color: #ddd;
+            position: relative;
+        }
+
+        .film-poster img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .film-year {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .film-info {
+            padding: 1.5rem;
+        }
+
+        .film-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .film-info p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .film-link {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        /* Career Milestones */
+        .milestones-section {
+            padding: 4rem 0;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #ddd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: -8px;
+            background-color: var(--bg-body);
+            border: 4px solid var(--primary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item.right::after {
+            left: -8px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .timeline-item.right .timeline-content {
+            border-left: none;
+            border-right: 4px solid var(--primary-color);
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 3rem 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .nav-container nav.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item.left, .timeline-item.right {
+                left: 0;
+                text-align: left;
+            }
+
+            .timeline-item.left::after, .timeline-item.right::after {
+                left: 23px;
+            }
+
+            .timeline-item.right .timeline-content, .timeline-item.left .timeline-content {
+                border-left: 4px solid var(--primary-color);
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">ZHAO WEI</a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#hero">首页</a></li>
+                    <li><a href="#bio">个人资料</a></li>
+                    <li><a href="#works">影视作品</a></li>
+                    <li><a href="#career">演艺经历</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>趙薇</h1>
+                <p>华语影视圈著名女演员、导演、制片人。从《还珠格格》的“小燕子”到《画皮》的复杂角色，她用演技诠释了百变人生。</p>
+                <a href="#works" class="btn">浏览作品</a>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section id="bio" class="bio-section">
+            <div class="container">
+                <h2 class="section-title">个人资料</h2>
+                <div class="bio-grid">
+                    <div class="bio-img-wrapper">
+                        <img src="https://picsum.photos/seed/zhaowei_portrait/400/500" alt="趙薇肖像">
+                    </div>
+                    <div class="bio-info">
+                        <h2>趙薇</h2>
+                        <div class="bio-meta">
+                            <span>出生日期：1976年3月12日</span>
+                            <span>出生地：安徽省芜湖市</span>
+                        </div>
+                        <div class="bio-text">
+                            <p>趙薇是中国内地著名的影视女演员、歌手、导演，北京电影学院表演系毕业。她是中国内地娱乐圈的标志性人物之一，其演艺生涯横跨电影、电视剧、音乐等多个领域。</p>
+                            <br>
+                            <p>1998年，凭借电视剧《还珠格格》中“小燕子”一角走红，成为中国内地家喻户晓的明星。此后，她在电影领域也取得了不俗的成绩，主演了《苏州河》、《绿茶》、《画皮》等多部知名影片，并凭借《画皮》等作品获得多个国际电影节的最佳女主角提名及奖项。</p>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag">演员</span>
+                            <span class="tag">导演</span>
+                            <span class="tag">制片人</span>
+                            <span class="tag">歌手</span>
+                            <span class="tag">北京电影学院</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filmography Section -->
+        <section id="works" class="filmography-section">
+            <div class="container">
+                <h2 class="section-title">经典作品</h2>
+                
+                <div class="film-tabs">
+                    <div class="film-tab active" onclick="filterFilms('all', this)">全部作品</div>
+                    <div class="film-tab" onclick="filterFilms('movie', this)">电影</div>
+                    <div class="film-tab" onclick="filterFilms('tv', this)">电视剧</div>
+                </div>
+
+                <div class="film-list" id="film-grid">
+                    <!-- Movie Card 1 -->
+                    <article class="film-card movie" data-type="movie">
+                        <div class="film-poster">
+                            <span class="film-year">2008</span>
+                            <img src="https://picsum.photos/seed/film_sheep/300/400" alt="画皮海报">
+                        </div>
+                        <div class="film-info">
+                            <h3>画皮 (2008)</h3>
+                            <p>赵薇在片中饰演狐妖小唯，凭借精湛的演技将角色的妖性与人性交织演绎得淋漓尽致，奠定了其影后级演技的地位。</p>
+                            <a href="#" class="film-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Movie Card 2 -->
+                    <article class="film-card movie" data-type="movie">
+                        <div class="film-poster">
+                            <span class="film-year">2005</span>
+                            <img src="https://picsum.photos/seed/film_suzhou/300/400" alt="苏州河海报">
+                        </div>
+                        <div class="film-info">
+                            <h3>苏州河 (2005)</h3>
+                            <p>王家卫监制电影，赵薇饰演女主角牡丹，展现了她文艺片时期的独特魅力，获得东京国际电影节最佳女主角提名。</p>
+                            <a href="#" class="film-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- TV Card 1 -->
+                    <article class="film-card tv" data-type="tv">
+                        <div class="film-poster">
+                            <span class="film-year">1998</span>
+                            <img src="https://picsum.photos/seed/tv_xiaoyanzi/300/400" alt="还珠格格海报">
+                        </div>
+                        <div class="film-info">
+                            <h3>还珠格格 (1998)</h3>
+                            <p>饰演古灵精怪、敢爱敢恨的“小燕子”，该剧成为当年收视率最高的电视剧之一，影响了几代中国观众。</p>
+                            <a href="#" class="film-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Movie Card 3 -->
+                    <article class="film-card movie" data-type="movie">
+                        <div class="film-poster">
+                            <span class="film-year">2001</span>
+                            <img src="https://picsum.photos/seed/film_green_tea/300/400" alt="绿茶海报">
+                        </div>
+                        <div class="film-info">
+                            <h3>绿茶 (2003)</h3>
+                            <p>娄烨导演作品，赵薇与吴彦祖搭档，演绎一段关于两段不同人生的情感纠葛，表演风格含蓄内敛。</p>
+                            <a href="#" class="film-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- TV Card 2 -->
+                    <article class="film-card tv" data-type="tv">
+                        <div class="film-poster">
+                            <span class="film-year">2013</span>
+                            <img src="https://picsum.photos/seed/tv_dali/300/400" alt="致青春海报">
+                        </div>
+                        <div class="film-info">
+                            <h3>致青春 (2013)</h3>
+                            <p>作为导演处女作，赵薇不仅主演了这部电影，还担任了监制。影片票房大获成功，开启了青春怀旧题材的热潮。</p>
+                            <a href="#" class="film-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Movie Card 4 -->
+                    <article class="film-card movie" data-type="movie">
+                        <div class="film-poster">
+                            <span class="film-year">2010</span>
+                            <img src="https://picsum.photos/seed/film_happy/300/400" alt="花木兰海报">
+                        </div>
+                        <div class="film-info">
+                            <h3>花木兰 (2009)</h3>
+                            <p>迪士尼真人版电影，赵薇饰演女将军花木兰，这是她首次在好莱坞大制作中担任重要角色。</p>
+                            <a href="#" class="film-link">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Milestones -->
+        <section id="career" class="milestones-section">
+            <div class="container">
+                <h2 class="section-title">演艺生涯里程碑</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="timeline-year">1998年</span>
+                            <h3>一夜成名</h3>
+                            <p>主演电视剧《还珠格格》，饰演“小燕子”一角，迅速成为家喻户晓的超级巨星。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2005年</span>
+                            <h3>东京影后提名</h3>
+                            <p>凭借电影《苏州河》获得东京国际电影节最佳女主角提名，演技获得国际认可。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2008年</span>
+                            <h3>转型成功</h3>
+                            <p>主演电影《画皮》，成功从偶像派转型为实力派影星，演技备受好评。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <span class="timeline-year">2013年</span>
+                            <h3>跨界导演</h3>
+                            <p>执导并主演电影《致我们终将逝去的青春》，担任导演处女作票房大卖。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于趙薇</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        本站致力于收集和整理关于著名演员趙薇的影视资料、作品回顾及职业生涯信息，为影迷提供准确的查询服务。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#hero">回到首页</a></li>
+                        <li><a href="#works">经典电影</a></li>
+                        <li><a href="#career">演艺经历</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">豆瓣电影</a></li>
+                        <li><a href="#">百度百科</a></li>
+                        <li><a href="#">IMDb</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 趙薇资料馆. All Rights Reserved. 本页面仅供信息展示与资料整理，非官方网站。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        }
+
+        // Filter Films
+        function filterFilms(type, tabElement) {
+            // Update Active Tab
+            const tabs = document.querySelectorAll('.film-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabElement.classList.add('active');
+
+            // Filter Grid Items
+            const items = document.querySelectorAll('.film-card');
+            items.forEach(item => {
+                if (type === 'all' || item.getAttribute('data-type') === type) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+  </html>
